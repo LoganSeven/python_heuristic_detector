@@ -128,8 +128,8 @@ print(wrapped_text)
 
 ## Documentation
 
-- **Algorithm Pseudo-Code:** [Documentation/algo_pseudo_code.md](Documentation/algo_pseudo_code.md)
-- **Simplified Organigram:** [Documentation/PythonHeuristicDetector_Final_simplified_organigram.svg](Documentation/PythonHeuristicDetector_Final_simplified_organigram.svg)
+- **Algorithm Pseudo-Code:** [Documentation/algo_pseudo_code.md](Documentation/Algo/algo_pseudo_code.md)
+- **Simplified Organigram:** [Documentation/PythonHeuristicDetector_Final_simplified_organigram.svg](Documentation/Algo/PythonHeuristicDetector_Final_simplified_organigram.svg)
 
 Both resources offer insights into the internal workings of the heuristic detector.
 
