@@ -22,7 +22,7 @@ echo_node_system/
         └── unit_tests/
             ├── __init__.py
             └── test_python_heuristics.py
-documentation/
+Documentation/
 ├── algo_pseudo_code.md
 └── PythonHeuristicDetector_Final_simplified_organigram.svg
 ```
@@ -30,8 +30,8 @@ documentation/
 - **main.py**: A small PyQt-based program providing a graphical interface to input text and see heuristic detection results live as the text changes.
 - **python_heuristic_detector.py**: Main implementation of the heuristic detector.
 - **test_python_heuristics.py**: Comprehensive unit tests using `unittest`.
-- **documentation/algo_pseudo_code.md**: Detailed pseudo-code describing the full detection algorithm.
-- **documentation/PythonHeuristicDetector_Final_simplified_organigram.svg**: Simplified organigram diagram of the detector's internal logic.
+- **Documentation/algo_pseudo_code.md**: Detailed pseudo-code describing the full detection algorithm.
+- **Documentation/PythonHeuristicDetector_Final_simplified_organigram.svg**: Simplified organigram diagram of the detector's internal logic.
 
 ## Features
 
@@ -129,10 +129,11 @@ print(wrapped_text)
 
 ## Documentation
 
-- **Algorithm Pseudo-Code:** [Documentation/algo_pseudo_code.md](documentation/algo_pseudo_code.md)
-- **Simplified Organigram:** [Documentation/PythonHeuristicDetector_Final_simplified_organigram.svg](documentation/PythonHeuristicDetector_Final_simplified_organigram.svg)
+- **Algorithm Pseudo-Code:** [Documentation/algo_pseudo_code.md](Documentation/algo_pseudo_code.md)
+- **Simplified Organigram:** [Documentation/PythonHeuristicDetector_Final_simplified_organigram.svg](Documentation/PythonHeuristicDetector_Final_simplified_organigram.svg)
 
 Both resources offer insights into the internal workings of the heuristic detector.
+
 
 ## Author
 
