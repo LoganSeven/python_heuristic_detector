@@ -30,8 +30,7 @@ Documentation/
 - **main.py**: A small PyQt-based program providing a graphical interface to input text and see heuristic detection results live as the text changes.
 - **python_heuristic_detector.py**: Main implementation of the heuristic detector.
 - **test_python_heuristics.py**: Comprehensive unit tests using `unittest`.
-- **Documentation/algo_pseudo_code.md**: Detailed pseudo-code describing the full detection algorithm.
-- **Documentation/PythonHeuristicDetector_Final_simplified_organigram.svg**: Simplified organigram diagram of the detector's internal logic.
+
 
 ## Features
 
