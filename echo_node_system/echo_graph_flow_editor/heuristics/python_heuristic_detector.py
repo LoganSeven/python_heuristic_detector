@@ -84,13 +84,13 @@ def _contains_dangerous_pattern(s: str) -> bool:
 
 
 # -----------------------------------------------------------------------------
-# Security guard: 5MB max input size
+# Security guard: 10MB max input size
 # -----------------------------------------------------------------------------
 """
 @var MAX_INPUT_SIZE
 The maximum allowed size (in bytes) for any incoming text or JSON string.
 """
-MAX_INPUT_SIZE = 5 * 1024 * 1024  # 5MB
+MAX_INPUT_SIZE = 20 * 1024 * 1024  # 10MB
 
 
 # -----------------------------------------------------------------------------
@@ -510,9 +510,9 @@ class PythonHeuristicDetector(QObject):
             self._last_json_string = input_string
 
         if len(input_string.encode("utf-8")) > MAX_INPUT_SIZE:
-            logger.warning("Input exceeds 5MB – returning verbatim.")
+            logger.warning("Input exceeds 20MB – returning 'text too big'.")
             self.python_detected_in_json = False
-            return input_string
+            return "text too big"
 
         try:
             data = json.loads(input_string)
@@ -569,9 +569,9 @@ class PythonHeuristicDetector(QObject):
             self._last_plain_string = input_string
 
         if len(input_string.encode("utf-8")) > MAX_INPUT_SIZE:
-            logger.warning("Input exceeds 5MB – returning verbatim.")
+            logger.warning("Input exceeds 20MB – returning 'text too big'.")
             self.python_detected_in_str = False
-            return input_string
+            return "text too big"
 
         wrapped, conf, did_wrap = self._wrap_code_blocks_in_text(input_string, start_tag, end_tag)
 
