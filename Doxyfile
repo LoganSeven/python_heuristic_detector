@@ -1,0 +1,45 @@
+# Doxyfile configuration for Python Heuristic Detector (Corrected)
+
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "Python Heuristic Detector"
+PROJECT_BRIEF          = "High-reliability heuristic-based Python code detector for NeuroGenesys."
+PROJECT_NUMBER         = 1.0
+
+OUTPUT_DIRECTORY       = Documentation
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = English
+
+INPUT                  = echo_node_system/ main.py
+RECURSIVE              = YES
+EXCLUDE                = __pycache__ unit_tests
+FILE_PATTERNS          = *.py
+EXTENSION_MAPPING      = py=C++
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+
+MARKDOWN_SUPPORT       = YES
+
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+GENERATE_HTML          = YES
+HTML_OUTPUT            = .
+
+HAVE_DOT               = YES
+DOT_NUM_THREADS        = 2
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_DIAGRAMS         = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+DOT_CLEANUP            = YES
+
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+INPUT_ENCODING         = UTF-8
